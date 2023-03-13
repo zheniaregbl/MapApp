@@ -10,5 +10,6 @@ class MainActivity : AppCompatActivity() {
 
         var l: String = "Hello";
         var thrid: Int = 3;
+        val hello: String = "Hello Man"
     }
 }
