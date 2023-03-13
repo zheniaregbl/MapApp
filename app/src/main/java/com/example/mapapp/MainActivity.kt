@@ -9,5 +9,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var l: String = "Hello";
+        var thrid: Int = 3;
     }
 }
