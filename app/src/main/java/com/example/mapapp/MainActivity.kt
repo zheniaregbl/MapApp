@@ -7,7 +7,6 @@ import com.yandex.mapkit.Animation
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
 import com.yandex.mapkit.map.CameraPosition
-import com.yandex.mapkit.mapview.MapView
 
 class MainActivity : AppCompatActivity() {
 
