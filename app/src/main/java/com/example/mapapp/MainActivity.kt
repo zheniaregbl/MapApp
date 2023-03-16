@@ -8,16 +8,10 @@ import com.yandex.mapkit.Animation
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
 import com.yandex.mapkit.layers.ObjectEvent
-import com.yandex.mapkit.map.CameraListener
 import com.yandex.mapkit.map.CameraPosition
-import com.yandex.mapkit.map.CameraUpdateReason
-import com.yandex.mapkit.map.Map
-import com.yandex.mapkit.search.Response
-import com.yandex.mapkit.search.Session
 import com.yandex.mapkit.user_location.UserLocationLayer
 import com.yandex.mapkit.user_location.UserLocationObjectListener
 import com.yandex.mapkit.user_location.UserLocationView
-import com.yandex.runtime.Error
 import com.yandex.runtime.image.ImageProvider
 
 class MainActivity : AppCompatActivity(), UserLocationObjectListener {
@@ -34,7 +28,7 @@ class MainActivity : AppCompatActivity(), UserLocationObjectListener {
 
         super.onCreate(savedInstanceState)
 
-        binding.mapView.map.move(CameraPosition(Point(58.496226, 31.208039), 11.0f, 0.0f, 0.0f),
+        binding.mapView.map.move(CameraPosition(Point(58.4, 31.2), 11.0f, 0.0f, 0.0f),
         Animation(Animation.Type.SMOOTH, 0f), null)
 
         val mapKit = MapKitFactory.getInstance()
