@@ -74,6 +74,12 @@ class MainActivity : AppCompatActivity(), UserLocationObjectListener, CameraList
         super.onStart()
     }
 
+    override fun onResume() {
+        super.onResume()
+
+        binding.navView.selectedItemId = R.id.map
+    }
+
     override fun onObjectAdded(usersLocationView: UserLocationView) {
         currentLocation.setAnchor(
             PointF((binding.mapView.width() * 0.5).toFloat(), (binding.mapView.height() * 0.5).toFloat()),
