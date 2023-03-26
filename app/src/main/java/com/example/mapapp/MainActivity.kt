@@ -88,6 +88,17 @@ class MainActivity : AppCompatActivity(), UserLocationObjectListener, CameraList
 
         usersLocationView.arrow.setIcon(ImageProvider.fromResource(this, R.drawable.current_location))
 
+        val pinIcon: CompositeIcon = usersLocationView.pin.useCompositeIcon()
+
+        pinIcon.setIcon(
+            "pin",
+            ImageProvider.fromResource(this, R.drawable.search_user_loc),
+            IconStyle().setAnchor(PointF(0f, 0f))
+                .setRotationType(RotationType.ROTATE)
+                .setZIndex(0f)
+                .setScale(1f)
+        )
+
         usersLocationView.accuracyCircle.fillColor = Color.TRANSPARENT
     }
 
