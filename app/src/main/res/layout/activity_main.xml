@@ -55,24 +55,129 @@
             android:textSize="34sp" />
     </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="40dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFilter"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/setting_button"
-        app:layout_constraintBottom_toTopOf="@+id/navView"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="40dp"
+        <ImageView
+            android:id="@+id/imageFilter"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter_button" />
+
+        <LinearLayout
+            android:id="@+id/layoutFilter"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/layoutBtFil1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/tgBtAll"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/selector_toggle"
+                    android:textColor="@color/white"
+                    android:textOff="Все"
+                    android:textOn="Все" />
+
+                <ToggleButton
+                    android:id="@+id/tgBtMonument"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/selector_toggle"
+                    android:textColor="@color/white"
+                    android:textOff="Памятники"
+                    android:textOn="Памятники" />
+
+                <ToggleButton
+                    android:id="@+id/tgBtRel"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/selector_toggle"
+                    android:textColor="@color/white"
+                    android:textOff="Религия"
+                    android:textOn="Религия" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBtFil2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/tgBtPark"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/selector_toggle"
+                    android:textColor="@color/white"
+                    android:textOff="Парки"
+                    android:textOn="Парки" />
+
+                <ToggleButton
+                    android:id="@+id/tgBtHotel"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/selector_toggle"
+                    android:textColor="@color/white"
+                    android:textOff="Отели"
+                    android:textOn="Отели" />
+
+                <ToggleButton
+                    android:id="@+id/tgBtCafe"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/selector_toggle"
+                    android:textColor="@color/white"
+                    android:textOff="Кафе"
+                    android:textOn="Кафе" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/filter_button"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toBottomOf="@+id/cardViewFilter">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_button" />
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
